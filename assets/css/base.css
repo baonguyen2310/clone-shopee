@@ -1,0 +1,64 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+    --primary-color: #ee4d2d;
+    --border-color: #dbdbdb;
+}
+* {
+    box-sizing: inherit; 
+    /*Mặc định là content-box, inherit sẽ cho tất cả là content-box,
+    nếu sau này thay đổi thì chỉ cần thay đổi thẻ cha lớn nhất*/
+    
+}
+html {
+    font-size: 100%;
+    /*Mặc định là 16px dùng ở đây để thay đổi cho nhanh,
+    thu phóng trang không ảnh hưởng,
+    thay đổi kích thước font chữ có ảnh hưởng*/
+    line-height: 1.15;
+    font-family:  "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    box-sizing: border-box;
+}
+
+.container-fixed {
+    max-width: 1200px;
+    /*margin: 0 auto; /*Căn giữa*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-fixed {
+
+}
+
+.col-sm-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+    padding: 0 5px;
+}
+
+.btn {
+    background-color: var(--white-color);
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    display: inline-flex; /*Để ngang line với button khác Do mỗi button chỉ có chính nó*/
+    align-items: center;
+    padding: 0 15px;
+    margin-left: 10px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background-color: rgb(251, 100, 69);
+}
+
+
+.btn-with-icon {
+    margin-left: 0;
+}
